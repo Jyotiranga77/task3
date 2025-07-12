@@ -1,0 +1,80 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f2f5;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #333;
+}
+
+section {
+  margin: 40px 0;
+}
+
+/* Carousel Section */
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.carousel img {
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+#joke-result {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 18px;
+  color: #444;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .carousel {
+    flex-direction: column;
+  }
+
+  .carousel img {
+    width: 100%;
+    height: auto;
+  }
+
+  button {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
